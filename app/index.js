@@ -54,7 +54,9 @@ window.onload = () => {
     for (let i = 0; i < carouselCollection.length; i++) {
       carouselContainer.innerHTML += `
         <div class="carousel-container">
-          <img src=${carouselCollection[i].image} alt="carousel-image" />
+          <img data-src=${
+            carouselCollection[i].image
+          } class="lazyload" alt="carousel-image" />
           <span class="product">Product ${i + 1}</span>
             <a class="title" href=${carouselCollection[i].link}>${
         carouselCollection[i].description

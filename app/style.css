@@ -135,7 +135,7 @@ body {
   font-size: 2.5rem;
   position: sticky;
   top: 90%;
-  margin: 0% 0% 10% 20%;
+  margin: 0% 0% 5% 20%;
   z-index: 10;
 }
 
@@ -180,7 +180,7 @@ body {
   width: 50%;
   gap: 1rem;
   position: sticky;
-  top: 90%;
+  top: 45%;
 }
 
 #rotator .container .left-content .left-inner {
