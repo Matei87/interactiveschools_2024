@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: block;
+}
+
+/* HERO SECTION */
+#hero {
+  overscroll-behavior: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#hero .container {
+  width: 100vw;
+  height: 100vh;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#hero .details {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+#hero .container img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+#hero .container svg:hover {
+  cursor: pointer;
+}
+
+#hero .container .title {
+  font-size: 80px;
+}
+
+#hero .container .title {
+  line-height: 80px;
+  height: calc(2 * 80px);
+  overflow: hidden;
+  width: 50%;
+}
+#hero .container .description {
+  line-height: 28px;
+  height: calc(2 * 28px);
+  overflow: hidden;
+  width: 50%;
+}
+
+/* CAROUSEL SECTION */
+#carousel {
+  color: #fff;
+  position: relative;
+}
+
+#carousel h1 {
+  color: #8b8000;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 3rem;
+}
+
+#carousel .carousel-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#carousel .carousel-container::after {
+  content: '';
+  background-image: linear-gradient(180deg, transparent, #000);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#carousel .carousel-container img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#carousel .carousel-container .product {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  font-size: 2.5rem;
+  z-index: 10;
+}
+
+#carousel .carousel-container a {
+  font-size: 2.5rem;
+  position: sticky;
+  top: 90%;
+  margin: 0% 0% 10% 20%;
+  z-index: 10;
+}
+
+/* ROTATOR SECTION */
+#rotator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+#rotator h1 {
+  color: #8b8000;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 3rem;
+}
+
+#rotator .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#rotator .container .right-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#rotator .container .left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 1rem;
+  position: sticky;
+  top: 90%;
+}
+
+#rotator .container .left-content .left-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.75rem;
+}
+
+#rotator .container .left-content .left-inner > span:first-of-type {
+  position: relative;
+}
+
+#rotator .container .left-content .left-inner > span:first-of-type::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #8b8000;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -10%;
+  display: block;
+  margin: 0 auto;
+}
+
+#rotator .container .left-content .left-inner p span:first-of-type {
+  font-size: 3.5rem;
+}
+
+#rotator .container .left-content .left-inner p span:first-of-type,
+#rotator .container .left-content .left-inner p span:last-of-type {
+  color: #002664;
+}
+
+#rotator .container .left-content .left-inner p span:nth-child(2) {
+  color: #8b8000;
+}
+
+#rotator .container .left-content .right-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#rotator .container .left-content .right-inner a {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+#rotator .right-content {
+  position: relative;
+}
+
+#rotator .right-content div {
+  z-index: 10;
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#rotator .right-content div a svg {
+  width: 100px;
+}
+
+#rotator .right-content img {
+  width: 100%;
+  height: 100%;
+  object-position: 0 0;
+}
+
+#rotator .right-content::after {
+  content: '';
+  background-image: linear-gradient(180deg, transparent, #000);
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #rotator .left-content {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  #rotator .right-content {
+    width: 100% !important;
+  }
+}
