@@ -5,13 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "watch": "gulp watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^5.0.0",
-    "gulp-css": "^0.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^9.1.0",
     "gulp-minify.js": "^1.0.8",
     "gulp-rename": "^2.0.0"
   }
