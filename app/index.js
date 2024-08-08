@@ -142,7 +142,7 @@ function getRotatorData() {
                     transform='translate(4.784) rotate(90)'
                     fill='none'
                     stroke='#fff'
-                    stroke-width='1'
+                    stroke-width='2'
                   />
                   <line
                     data-name='Line 89'
@@ -150,7 +150,7 @@ function getRotatorData() {
                     transform='translate(0 4.695)'
                     fill='none'
                     stroke='#fff'
-                    stroke-width='1'
+                    stroke-width='2'
                   />
                 </g>
               </svg>

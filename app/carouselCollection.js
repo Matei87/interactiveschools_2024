@@ -7,7 +7,7 @@ export const carouselCollection = [
   {
     link: 'https://myanimelist.net/anime/5/Cowboy_Bebop__Tengoku_no_Tobira',
     image: 'https://images.dog.ceo/breeds/labradoodle/Cali.jpg',
-    description: 'Cowboy Bebop: Tengoku no Tobira',
+    description: 'Tengoku no Tobira',
   },
   {
     link: 'https://myanimelist.net/anime/6/Trigun',
@@ -39,7 +39,7 @@ export const carouselCollection = [
   {
     link: 'https://myanimelist.net/anime/17/Hungry_Heart__Wild_Striker',
     image: 'https://images.dog.ceo/breeds/segugio-italian/n02090722_002.jpg',
-    description: 'Hungry Heart: Wild Striker',
+    description: 'Hungry Heart Wild',
   },
   {
     link: 'https://myanimelist.net/anime/18/Initial_D_Fourth_Stage',
