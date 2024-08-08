@@ -14,8 +14,6 @@ gsap.to(sections, {
     pin: true,
     scrub: 1,
     snap: 1 / (sections.length - 1),
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    //end: '+=3500',
   },
 });
 
@@ -110,7 +108,7 @@ function getRotatorData() {
             </p>
           </div>
           <div class="right-inner">
-            <a href="#first-rotator"></a>
+            <a class="active" href="#first-rotator"></a>
             <a href="#second-rotator"></a>
             <a href="#third-rotator"></a>
             <a href="#forth-rotator"></a>
