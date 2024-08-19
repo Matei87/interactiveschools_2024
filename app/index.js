@@ -78,10 +78,38 @@ function addCarouselData() {
           <img data-src=${
             carouselCollection[i].image
           } class="lazyload" alt="carousel-image" />
-          <span class="product">Product ${i + 1}</span>
-            <a class="title" href=${carouselCollection[i].link}>${
-      carouselCollection[i].description
-    }</a>
+          <div class="carousel-details">
+            <span class="product">Product ${i + 1}</span>
+            <a href=${carouselCollection[i].link} target="_blank">
+              <svg
+                id='svg-rotator'
+                xmlns='http://www.w3.org/2000/svg'
+                width='54.618'
+                height='10.097'
+                viewBox='0 0 54.618 10.097'
+              >
+                <g transform='translate(54 9.743) rotate(180)'>
+                  <path
+                    data-name='Path 11827'
+                    d='M0,0,4.695,4.695,9.39,0'
+                    transform='translate(4.784) rotate(90)'
+                    fill='none'
+                    stroke='#fff'
+                    stroke-width='2'
+                  />
+                  <line
+                    data-name='Line 89'
+                    x1='54'
+                    transform='translate(0 4.695)'
+                    fill='none'
+                    stroke='#fff'
+                    stroke-width='2'
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <span class="title">${carouselCollection[i].description}</span>
         </div>
         `;
   }
@@ -126,7 +154,6 @@ function getRotatorData() {
            <a
               href="${rotatorCollection[i].link}"
               target="_blank"
-              rel="noopener noreferrer"
             >
             <svg
                 id='svg-rotator'

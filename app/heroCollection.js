@@ -1,25 +1,25 @@
 export const heroCollection = [
   {
-    title: 'slide 1',
+    title: 'Slide 1',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue justo, feugiat ornare nunc sit amet, imperdiet laoreet lacus. Suspendisse imperdiet ultricies nisl.',
   },
   {
-    title: 'slide 2',
+    title: 'Slide 2',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'slide 3',
+    title: 'Slide 3',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue justo, feugiat ornare nunc sit amet, imperdiet laoreet lacus. Suspendisse imperdiet ultricies.',
   },
   {
-    title: 'slide 4',
+    title: 'Slide 4',
     description:
       'Etiam imperdiet, dui vitae aliquet elementum, lectus urna vestibulum eros, id condimentum quam neque sed ligula. Nam consequat gravida turpis.',
   },
   {
-    title: 'slide 5',
+    title: 'Slide 5',
     description: '',
   },
   {
@@ -33,11 +33,11 @@ export const heroCollection = [
     description: 'Praesent iaculis auctor dolor.',
   },
   {
-    title: 's',
+    title: 'S',
     description: '',
   },
   {
-    title: 'd',
+    title: 'D',
     description: '',
   },
   {

@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://db.onlinewebfonts.com/c/d414e85093c9a428dbde5f2b4c39f187?family=Berling+Nova+Sans+W04+Regular');
+
+@font-face {
+  font-family: 'Cordale';
+  src: url('./fonts/Cordale.ttf') format('truetype');
+  font-weight: 400;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --gold: #b3995d;
+  --blue: #002664;
+  --dark-blue: #001332;
+  --gray: #9a9b9c;
+}
 
 /* RESET */
 * {
@@ -17,7 +33,6 @@ svg {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   width: 100%;
   height: 100%;
@@ -39,7 +54,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--white);
   position: relative;
   display: flex;
   align-items: center;
@@ -68,40 +83,47 @@ body {
 }
 
 #hero .container .title {
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 80px;
-  height: calc(2 * 80px);
+  font-family: 'Cordale';
+  font-size: 80px;
+  line-height: 106px;
+  height: calc(2 * 106px);
   overflow: hidden;
-  width: 50%;
+  width: 60%;
 }
 #hero .container .description {
-  line-height: 28px;
-  height: calc(2 * 28px);
+  font-family: 'Berling Nova Sans W04 Regular';
+  line-height: 17px;
+  height: calc(2 * 17px);
+  font-size: 14px;
   overflow: hidden;
-  width: 50%;
-  font-weight: 500;
+  width: 60%;
 }
 
 /* CAROUSEL SECTION */
 #carousel {
-  color: #fff;
   position: relative;
+  display: block;
+  color: var(--white);
+  margin: 40px 40px 0;
+  font-family: 'Cordale';
+  font-weight: 400;
 }
 
 #carousel h1 {
-  color: #b3995d;
+  font-size: 90px;
+  font-weight: 400;
+  color: var(--gold);
   text-align: center;
   margin: 2rem auto;
-  font-size: 3rem;
-  font-weight: 700;
+  line-height: 80px;
 }
 
 #carousel .carousel-container {
   display: block;
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: inherit;
+  height: 800px;
+  margin: 1rem 0;
 }
 
 #carousel .carousel-container::after {
@@ -117,9 +139,10 @@ body {
 }
 
 #carousel .carousel-container img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -127,21 +150,25 @@ body {
   bottom: 0;
 }
 
-#carousel .carousel-container .product {
+#carousel .carousel-details {
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  bottom: 10%;
-  left: 5%;
-  font-size: 2.5rem;
-  z-index: 10;
+  bottom: 5%;
+  left: 0%;
+  width: -moz-available;
+  margin: 0 3rem;
+  z-index: 2;
 }
 
-#carousel .carousel-container a {
-  font-size: 2.5rem;
-  font-weight: 500;
+#carousel .carousel-container .title {
+  font-size: 40px;
   position: sticky;
   top: 90%;
-  margin: 0% 0% 5% 20%;
-  z-index: 10;
+  margin: 0% 0% 55px 20%;
+  z-index: 2;
 }
 
 /* ROTATOR SECTION */
@@ -153,11 +180,12 @@ body {
 }
 
 #rotator h1 {
-  color: #b3995d;
+  font-family: 'Cordale';
+  font-weight: 400;
+  color: var(--gold);
   text-align: center;
-  margin: 2rem auto 0;
-  font-size: 3rem;
-  font-weight: 700;
+  margin: auto 0;
+  font-size: 90px;
 }
 
 #rotator .container {
@@ -165,8 +193,8 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
-  margin: 2rem 0;
+  height: 800px;
+  margin: 0.5rem 0;
 }
 
 #rotator .container .right-content {
@@ -194,19 +222,19 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.75rem;
 }
 
 #rotator .container .left-content .left-inner > span:first-of-type {
+  font-family: 'Berling Nova Sans W04 Regular';
   position: relative;
-  color: #9a9b9c;
-  font-weight: 500;
+  color: var(--gray);
+  font-size: 18px;
 }
 
 #rotator .container .left-content .left-inner > span:first-of-type::after {
   content: '';
   position: absolute;
-  border-bottom: 1px solid #9a9b9c;
+  border-bottom: 1px solid var(--gold);
   width: 50%;
   left: 50%;
   transform: translate(-50%);
@@ -216,16 +244,22 @@ body {
 }
 
 #rotator .container .left-content .left-inner p span:first-of-type {
-  font-size: 3.5rem;
+  font-size: 75px;
+  font-style: italic;
 }
 
 #rotator .container .left-content .left-inner p span:first-of-type,
 #rotator .container .left-content .left-inner p span:last-of-type {
-  color: #002664;
+  color: var(--blue);
 }
 
 #rotator .container .left-content .left-inner p span:nth-child(2) {
-  color: #9a9b9c;
+  color: var(--gold);
+}
+#rotator .container .left-content .left-inner p span:last-of-type {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 25px;
 }
 
 #rotator .container .left-content .right-inner {
@@ -239,11 +273,11 @@ body {
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 50%;
-  background: #000;
+  background: var(--black);
 }
 
 #rotator .container .left-content .right-inner a.active + a {
-  background: #9a9b9c;
+  background: #afafaf;
 }
 
 #rotator .container .left-content .right-inner a.active:after {
@@ -255,7 +289,7 @@ body {
   height: 0.75rem;
   width: 0.75rem;
   border-radius: 50%;
-  border: 1px solid #9a9b9c;
+  border: 1px solid var(--gray);
 }
 
 #rotator .right-content {
@@ -263,10 +297,10 @@ body {
 }
 
 #rotator .right-content div {
+  font-family: 'Cordale';
   z-index: 10;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 500;
+  color: var(--white);
+  font-size: 40px;
   position: absolute;
   bottom: 5%;
   width: 90%;
@@ -279,6 +313,7 @@ body {
   width: 100%;
   height: 100%;
   object-position: 0 0;
+  object-fit: cover;
 }
 
 #rotator .right-content::after {
@@ -294,15 +329,15 @@ body {
 }
 
 #rotator .right-content a {
-  width: 3.5rem;
-  color: #fff;
+  width: 54px;
+  color: var(--white);
 }
 
 /* FOOTER */
 footer {
   width: 100%;
-  height: 6rem;
-  background-color: #001332;
+  height: 91px;
+  background-color: var(--dark-blue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,22 +352,46 @@ footer svg {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-  html {
-    font-size: 12px;
+  #hero .container .title {
+    font-size: 80px;
+  }
+
+  #rotator {
+    width: 90%;
+  }
+
+  #rotator .container {
+    margin: 10px 0;
   }
 
   #rotator .left-content {
     display: none !important;
-    visibility: hidden !important;
   }
 
   #rotator .right-content {
     width: 100% !important;
   }
 
+  #carousel .carousel-container,
+  #rotator .container {
+    height: 500px;
+  }
+
+  #carousel,
+  #rotator {
+    margin: 20px 20px 0;
+  }
+
+  #rotator h1,
+  #carousel h1 {
+    font-size: 50px;
+  }
+
+  #rotator .right-content div,
+  #carousel .carousel-details,
   #carousel .carousel-container .product,
-  #carousel .carousel-container a {
-    font-size: 2rem;
+  #carousel .carousel-container .title {
+    font-size: 28px;
   }
 
   #carousel .carousel-container a {
